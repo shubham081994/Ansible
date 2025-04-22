@@ -1,0 +1,9 @@
+---
+- name: Write text into a file
+  hosts: local
+  connection: local
+  tasks:
+    - name: Create a file with content
+      copy:
+        dest: /tmp/hello_ansible.txt
+        content: "Hello from Ansible!\nThis is a test file."

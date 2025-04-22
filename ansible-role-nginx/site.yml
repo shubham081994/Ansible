@@ -1,0 +1,5 @@
+- name: Install Nginx using Role
+  hosts: local
+  # become: true      ← comment or remove this
+  roles:
+    - nginx_install
